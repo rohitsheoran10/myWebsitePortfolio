@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+       <!-- To create a form in HTMl we have a form tag -->
+    <form method="GET">
+        <!-- Inside this form we need to add the attributes and we will add some common types of attributes -->
+        <!-- 1. Input type=text  : It is a self-closing tag         -->
+        First Name:<input type="text" ><br>
+        Last Name:<input type="text" name="lastname"><br>
+
+        <!-- 2. Input type= email  : It is a self-closing tag         -->
+        <!-- we can make a field mandatory by adding the required keyword -->
+        Email:<input type="email" name="email" required><br>
+
+        <!-- 8. input tag type= password  we can specify the min length by using minlength attribute                                -->
+       Password:<input type="password" name="password" minlength="5"><br>
+
+       <!-- 4. input tag type= date                                   -->
+       Birthday:<input type="date" name="birthday"><br>
+
+       <!-- 5. input tag type= radio     radio button choices are not aware of each other and in order to connect them we use the name attribute otherwise we can select multiple radio buttons                             -->
+       Gender:<br>
+       <input type="radio" name="Gender" value="Male" >Male<br>
+       <input type="radio" name="Gender" value="Female"  >Female<br>
+       <input type="radio" name="Gender" value="Other" Male>Other<br>
+
+       <!-- 6. input tag type= checkbox                                -->
+       Pets:<br>
+       <input type="checkbox" name="Pets" value="Cat">Cat<br>
+       <input type="checkbox" name="Pets" value="Dog">Dog<br>
+       <input type="checkbox" name="Pets" value="Others">Others<br>
+
+       <!-- 7. select tag for drop downs     we can mention the attribute multiple to let the user select multiple values from the drop down
+        e.g.   <select multiple="multiple">                 -->
+       Cars:<br>
+       <select name="Cars">
+           <option value="Volvo" name="Volvo" >Volvo</option>
+           <option value="Audi" name="Audi">Audi</option>
+
+       </select><br>
+
+        <!-- 3. Input type= submit  : It is a self-closing tag.If we do not provide a value ,it will be called as Submit       -->
+        <input type="submit" value = 'Register'>
+
+         <!-- 4. Input type= reset  : It is a self-closing tag.       -->
+         <input type="reset">
+
+
+
+    </form>
+
+</body>
+</html>
